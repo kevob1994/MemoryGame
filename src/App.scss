@@ -1,0 +1,16 @@
+@import "./global.scss";
+
+.content-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .site-layout {
+        display: flex;
+        flex: 1;
+        padding: 20px;
+        @media screen and (max-width: 1300px) {
+            flex-direction: column;
+        }
+    }
+}

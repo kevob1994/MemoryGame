@@ -1,0 +1,53 @@
+@import "./../../global.scss";
+
+.content-game {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #80808045;
+    border-radius: 20px;
+    width: 1300px;
+    @media screen and (max-width: 1300px) {
+        width: 100%;
+        margin: 0px;
+    }
+    .header {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 1350px) {
+            flex-direction: column;
+        }
+        .ant-btn {
+            background: $darkBlue;
+            color: white;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 50%;
+            border-radius: 5px;
+            @media screen and (max-width: 1350px) {
+                width: 100%;
+            }
+        }
+
+        .chronometer {
+            display: flex;
+            @media screen and (max-width: 1350px) {
+                width: 100%;
+                justify-content: space-between;
+            }
+            h2 {
+                margin-right: 20px;
+                font-weight: bold;
+                color: $darkBlue;
+                display: flex;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .row {
+        // height: 100%;
+    }
+}

@@ -1,0 +1,64 @@
+@import "./../../global.scss";
+
+.back-card {
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutDTckDgAf-q46Z3Wrs3Hk-lNyvP4MKFnhZGvBEn9FZ-vuSdnAHjDSrHR5iQGivnNLq0&usqp=CAU");
+    width: 150px;
+    height: 190px;
+    background-size: 150px 190px;
+    border-radius: 5px;
+    box-shadow: -2px 19px 61px -28px rgba(0,0,0,0.75);
+    margin: auto;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1350px) {
+        width: 100px;
+        height: 140px;
+        background-size: 100px 140px;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 80px;
+        height: 120px;
+        background-size: 80px 120px;
+    }
+}
+
+.back-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+.back-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-card,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    position: absolute;
+    backface-visibility: hidden;
+    background: #fff;
+    border: 1px solid $darkBlue;
+    border-radius: 5px;
+    @media screen and (max-width: 1350px) {
+        background-size: 100px 140px;
+    }
+    @media screen and (max-width: 400px) {
+        width: 80px;
+        height: 120px;
+        background-size: 80px 120px;
+    }
+}
+
+.front-card {
+    transform: rotateY(180deg);
+    
+}

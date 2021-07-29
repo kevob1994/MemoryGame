@@ -1,0 +1,11 @@
+@import "./../../global.scss";
+
+header {
+  height: 95px !important;
+  display: flex !important;
+  align-items: center !important;
+  h1 {
+    color: $colorTextInDark !important;
+    margin: 0px !important;
+  }
+}
